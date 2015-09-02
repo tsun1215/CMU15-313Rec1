@@ -15,6 +15,7 @@ public class Menu {
 		System.out.println("Welcome to the Nubmer Guessing Game!");
 		System.out.println("Type 1 to start a new game");
 		System.out.println("Type 2 to start game with user selected max value");
+		System.out.println("Type 3 to display author info");
 	}
 
 	public void promptUserInput() {
@@ -36,6 +37,9 @@ public class Menu {
 					printErrorMessage();
 					System.exit(0);
 				}
+			} else if (choice == 3) {
+				System.out.println("The author info");
+				System.exit(0);
 			} else {
 				printErrorMessage();
 			}
