@@ -13,7 +13,7 @@ public class Menu {
   public void displayMenu(){
     System.out.println("Welcome to the Nubmer Guessing Game!");
     System.out.println("Type 1 to start a new game");
-    System.out.println("Type 2 to quit");
+    System.out.println("Type 2 to display author info");
   }
 
   public void promptUserInput(){
@@ -26,6 +26,7 @@ public class Menu {
         GuessingGameLogic gg = new GuessingGameLogic(scan);
         gg.guessingGame();
       }else if(choice == 2){
+    	System.out.println("The author info");
         System.exit(0);
       } else{
         printErrorMessage();
